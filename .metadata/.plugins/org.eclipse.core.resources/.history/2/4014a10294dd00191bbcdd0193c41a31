@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Fruit {
+	private String orchardName;
+	
+	public Fruit() {
+		
+	}
+	
+	@Override
+	public String toString() {
+		
+	}
+	
+	public boolean addItem(Scanner scanner) {
+		System.out.println("Enter the sales price of the item:"); //can be any input
+		orchardName = scanner.next();
+	}
+	
+}

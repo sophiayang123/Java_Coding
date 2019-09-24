@@ -1,0 +1,46 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class Assign1 {
+	public void displayMenu() {
+		System.out.println("\n" + 
+				"Please select one of the following:\n" + 
+				"1: Add Item to Inventory\n" + 
+				"2: Display Current Inventory\n" + 
+				"3: Buy Item(s)\n" + 
+				"4: Sell Item(s)\n" + 
+				"5: To Exit");
+	}
+	
+	public static void main(String[] args) {
+		Assign1 a1 = new Assign1();
+		a1.displayMenu();	
+		Scanner keyboard= new Scanner(System.in);
+		keyboard.useDelimiter(Pattern.compile("[\\r\\n]+"));
+		
+		
+		while(keyboard.hasNext()) {	
+				String inp = keyboard.next();
+				if(inp.equals("1")) {
+					Inventory iv = new Inventory();
+					iv.addItem(keyboard);
+				}else if(inp.equals("2")){
+					System.out.println("Enter new size of array:");
+					int sel = keyboard.nextInt();
+				}else if(inp.equals("3")) {
+				}else if(inp.equals("4")) {
+					System.out.println("Numbers are: ");
+				}else if(inp.equals("5")) {
+					System.out.print("Exiting...");
+					break;
+				}else {
+					System.out.print("invalid input, please re-enter ");
+				}
+			
+				a1.displayMenu();
+			
+			inp = keyboard.next();
+		}
+	}
+
+}

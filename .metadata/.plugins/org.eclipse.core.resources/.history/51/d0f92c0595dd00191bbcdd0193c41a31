@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Vegetable {
+	private String farmName;
+	
+	public Vegetable() {
+		
+	}
+	
+	public String toString() {
+		return "";
+	}
+	
+	public boolean addItem(Scanner scanner) {
+		System.out.println("Enter the name of the farm supplier:"); //can be any input
+		farmName = scanner.next();
+		
+		return true
+	}
+	
+	
+}

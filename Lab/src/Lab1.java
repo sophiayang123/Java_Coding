@@ -1,0 +1,80 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+/**
+ * 
+ * This class contains the dynamically allocated array and it's processing
+ * Student Name: 
+ * Student Number:  
+ * Course: CST8130 - Data Structures
+ * @author Linda Crane
+ * @author Melissa Sienkiewicz
+ *
+ */
+public class Lab1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Numbers num = new Numbers();
+		Scanner keyboard= new Scanner(System.in);
+		num.addValue(keyboard);
+//		System.out.println(
+//				"Please select one of the following:\n" + 
+//				"1: Initialize a default array\n" + 
+//				"2: To specify the max size of the array\n" + 
+//				"3: Add value to the array\n" + 
+//				"4: Display values in the array\n" + 
+//				"5: Display the average of the values\n" + 
+//				"6: To Exit");
+//
+//		Numbers num = new Numbers();
+//		Scanner keyboard= new Scanner(System.in);
+//		String inp = keyboard.next();
+//		keyboard.useDelimiter(Pattern.compile("[\n]+"));
+//		boolean test = Pattern.matches("[1-6]", inp);
+//		System.out.print(test);
+//		Pattern pattern = Pattern.compile("[1-6](\r\n|\n|\r)");
+		
+//			while(keyboard.hasNext()) {	
+	//			if(keyboard.hasNext(Pattern.compile("[1-6]"))) {
+	//				String inp = keyboard.next();
+//					if(inp.equals("1")) {
+//						num = new Numbers();
+//					}else if(inp.equals("2")){
+//						System.out.println("Enter new size of array:");
+//						int sel = keyboard.nextInt();
+//						num = new Numbers(sel);
+//					}else if(inp.equals("3")) {
+//						num.addValue(keyboard);
+//					}else if(inp.equals("4")) {
+//						System.out.println("Numbers are: ");
+//						num.toString();
+//					}else if(inp.equals("5")) {
+//						System.out.print("Average are: ");
+//						num.calcAverage();
+//					}else if(inp.equals("6")) {
+//						System.out.print("Exiting......");
+//						break;
+//					}else {
+//						System.out.print("invalid input, please re-enter ");
+//					}
+//				
+//				System.out.println("\n" + 
+//						"Please select one of the following:\n" + 
+//						"1: Initialize a default array\n" + 
+//						"2: To specify the max size of the array\n" + 
+//						"3: Add value to the array\n" + 
+//						"4: Display values in the array\n" + 
+//						"5: Display the average of the values\n" + 
+//						"6: To Exit");
+//				
+//				inp = keyboard.next();
+//			}
+		}
+	}
+	
+
+

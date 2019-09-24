@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Inventory {
+	
+	private FoodItem[] inventory;
+	
+	private int numItem;
+	
+	public Inventory() {
+		
+	}
+	
+	public boolean addItem(Scanner scanner) {
+		scanner = new Scanner(System.in);
+		FoodItem fi = new FoodItem();
+		fi.addItem(scanner);
+	}
+	
+	public int alreadyExits (FoodItem fi) {
+		
+	}
+	
+	public boolean updateQuantity(Scanner scanner, boolean buyOrSell) {
+		
+	}
+	
+	@Override
+	public String String() {
+		
+	}
+}

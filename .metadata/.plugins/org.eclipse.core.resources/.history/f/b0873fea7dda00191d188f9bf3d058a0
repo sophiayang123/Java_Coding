@@ -1,0 +1,27 @@
+package trail;
+
+public class TestStuff {
+    public static void main(String[] args) {
+    	int n=17;
+    	for (int i=1; i < n; i*=2) {
+    	    int j = n; 
+    	    while ( j>0) {
+    	        System.out.println (" " + i + " " + j );
+    	        j-=2;
+    	    }
+    	    System.out.print ("\n");
+    	}
+//    	float abc = 1.2f;
+//    	System.out.println(abc);
+//        Stuff myStuff = new Stuff(12);
+//        System.out.println(myStuff);
+//        myStuff.doSomething(6.4);
+//        System.out.println(myStuff);
+//        String s = "Original";
+//        myStuff.ChangeString(s);
+//        System.out.println(s);
+//        System.out.println(myStuff);
+    }  
+}
+
+

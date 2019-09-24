@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Inventory {
+	
+	private FoodItem[] inventory;
+	
+	private int numItem;
+	
+	public Inventory() {
+		
+	}
+	
+	public boolean addItem(Scanner scanner) {
+		boolean status = false;
+		scanner = new Scanner(System.in);
+		FoodItem fi = new FoodItem();
+		fi.addItem(scanner);
+		if(numItem==0) {
+			inventory[0] = fi; 
+			numItem++;
+			status = true;
+		}else if(numItem>0 && numItem<=20){
+			inventory[numItem] = fi;
+			numItem++;
+			status = true;
+		}else {
+			status = false;
+		}
+		
+		return status;
+	}
+	
+	public int alreadyExits (FoodItem fi) {
+		return 1;
+	}
+	
+	public boolean updateQuantity(Scanner scanner, boolean buyOrSell) {
+		return false;
+	}
+	
+	@Override
+	public String toString() {
+		return "";
+	}
+}

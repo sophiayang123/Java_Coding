@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Preserve {
+	private int jarSize;
+	
+	public Preserve() {
+		
+	}
+	
+	@Override
+	public String toString() {
+		
+	}
+	
+	public  boolean addItem(Scanner scanner) {
+		System.out.println("Enter the size of the jar in millilitres:"); //must be a positive integer>
+		boolean isValid = false;
+		while (!isValid) {
+		    System.out.println ("Enter valid number greater than 0");
+		    if (scanner.hasNextInt()) { 
+		    	jarSize = scanner.nextInt();
+		        if (jarSize > 0) 
+		            isValid = true; 
+		        else System.out.println ("Error – please reenter a valid value");
+		    } else System.out.println ("Error – please reenter a valid value");
+		}
+	}
+	
+}
